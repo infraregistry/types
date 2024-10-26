@@ -1,0 +1,13 @@
+{
+  "name": "@infraregistry/types",
+  "description": "Shared types for infraregistry.",
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "import": "./dist/go-types.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ]
+}
