@@ -1,5 +1,5 @@
 packages:
-  - path: "github.com/nvr-ai/go-types"
+  - path: "github.com/infraregistry/types"
     output_path: dist/go-types.ts
     type_mappings:
       time.Time: "string /* RFC3339 */"
