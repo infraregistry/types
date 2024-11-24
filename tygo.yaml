@@ -3,7 +3,7 @@ packages:
     output_path: dist/go-types.ts
     type_mappings:
       ChangeType: "ChangeType"
-      time.Time: "string /* RFC3339 */"
+      time.Time: "string | Date"
       null.String: "null | string"
       null.Bool: "null | boolean"
       uuid.UUID: "string /* uuid */"

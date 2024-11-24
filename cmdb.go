@@ -20,7 +20,8 @@ type Change struct {
 	Updated     time.Time   `json:"updated"`
 	ComponentID string      `json:"componentId"`
 	Type        *ChangeType `json:"type"`
-	Content     types.JSON  `json:"content"`
+	From        string      `json:"from"`
+	To          string      `json:"to"`
 }
 
 type ChangeCreate struct {
