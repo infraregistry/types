@@ -8,19 +8,19 @@ import (
 
 type ChangeType string
 
-var (
+const (
 	ChangeTypeSystemChange ChangeType = "system"
 	ChangeTypeUserChange   ChangeType = "user"
 )
 
 type Change struct {
-	ID          string     `json:"id"`
-	Name        string     `json:"name"`
-	Created     time.Time  `json:"created"`
-	Updated     time.Time  `json:"updated"`
-	ComponentID string     `json:"componentId"`
-	Type        ChangeType `json:"type"`
-	Content     types.JSON `json:"content"`
+	ID          string      `json:"id"`
+	Name        string      `json:"name"`
+	Created     time.Time   `json:"created"`
+	Updated     time.Time   `json:"updated"`
+	ComponentID string      `json:"componentId"`
+	Type        *ChangeType `json:"type"`
+	Content     types.JSON  `json:"content"`
 }
 
 type ChangeCreate struct {

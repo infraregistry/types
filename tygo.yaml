@@ -2,6 +2,7 @@ packages:
   - path: "github.com/infraregistry/types"
     output_path: dist/go-types.ts
     type_mappings:
+      ChangeType: "ChangeType"
       time.Time: "string /* RFC3339 */"
       null.String: "null | string"
       null.Bool: "null | boolean"
